@@ -34,8 +34,8 @@ public class juegoGrafico1 extends AppCompatActivity {
         ImageButton btn2 = (ImageButton) findViewById(R.id.imageButton2);
 
         TextView puntoA1 = (TextView) findViewById(R.id.puntoAzul1);
-        TextView puntoA2 = (TextView) findViewById(R.id.puntoAzul1);
-        TextView puntoA3 = (TextView) findViewById(R.id.puntoAzul1);
+        TextView puntoA2 = (TextView) findViewById(R.id.puntoAzul2);
+        TextView puntoA3 = (TextView) findViewById(R.id.puntoAzul3);
 
         TextView puntoR1 = (TextView) findViewById(R.id.puntoRojo1);
         TextView puntoR2 = (TextView) findViewById(R.id.puntoRojo2);
