@@ -78,6 +78,9 @@ public class juegoGrafico1 extends AppCompatActivity {
                     Toast mensaje1 =
                             Toast.makeText(getApplicationContext(),"¡CORRECTO!",Toast.LENGTH_LONG);
                     mensaje1.show();
+
+                    Intent intent = new Intent(v.getContext(), juegoGrafico2.class);
+                    startActivityForResult(intent, 0);
                 }
             });
             btn2.setOnClickListener(new View.OnClickListener() {
@@ -86,6 +89,9 @@ public class juegoGrafico1 extends AppCompatActivity {
                     Toast mensaje1 =
                             Toast.makeText(getApplicationContext(),"incorrecto :(",Toast.LENGTH_LONG);
                     mensaje1.show();
+
+                    Intent intent = new Intent(v.getContext(), juegoGrafico2.class);
+                    startActivityForResult(intent, 0);
                 }
             });
         }else if(valor1<valor2){
@@ -95,6 +101,9 @@ public class juegoGrafico1 extends AppCompatActivity {
                     Toast mensaje1 =
                             Toast.makeText(getApplicationContext(),"incorrecto :(",Toast.LENGTH_LONG);
                     mensaje1.show();
+
+                    Intent intent = new Intent(v.getContext(), juegoGrafico2.class);
+                    startActivityForResult(intent, 0);
                 }
             });
             btn2.setOnClickListener(new View.OnClickListener() {
@@ -103,12 +112,17 @@ public class juegoGrafico1 extends AppCompatActivity {
                     Toast mensaje1 =
                             Toast.makeText(getApplicationContext(),"¡CORRECTO!",Toast.LENGTH_LONG);
                     mensaje1.show();
+
+                    Intent intent = new Intent(v.getContext(), juegoGrafico2.class);
+                    startActivityForResult(intent, 0);
                 }
             });
         }else{
             Toast mensaje1 =
                     Toast.makeText(getApplicationContext(),"Son iguales, ambos son correctos :)",Toast.LENGTH_LONG);
             mensaje1.show();
+
+
         }
     }
 }
