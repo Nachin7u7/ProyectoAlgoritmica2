@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -29,8 +30,8 @@ public class MenuActivity extends AppCompatActivity {
         botonJuego1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent loginIntent = new Intent(InicioActivity.this, LoginActivity.class);
-                //startActivity(loginIntent);
+                Intent secuenciaIntent = new Intent(MenuActivity.this, SecuenciaActivity.class);
+                startActivity(secuenciaIntent);
             }
         });
         botonJuego2.setOnClickListener(new View.OnClickListener() {
