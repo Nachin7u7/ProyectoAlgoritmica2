@@ -75,13 +75,13 @@
 
         <ImageButton
             android:id="@+id/equis"
-            android:layout_width="201dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:src="@drawable/no_check" />
 
         <ImageButton
             android:id="@+id/check"
-            android:layout_width="197dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:src="@drawable/check" />
 
