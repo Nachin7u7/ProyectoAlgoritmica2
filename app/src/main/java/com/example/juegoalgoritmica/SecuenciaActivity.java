@@ -127,7 +127,7 @@ public class SecuenciaActivity  extends AppCompatActivity {
     }
     //Código de las secuencias
     void secuencia1() {
-        int n = (int) (Math.random() * 5 + 1);
+        int n = (int) (Math.random() * 4 + 1)+2;
         int p = (int) (Math.random() * 9 + 1);
 
         arreglo[0] = p;
@@ -161,7 +161,7 @@ public class SecuenciaActivity  extends AppCompatActivity {
     }
 
     void secuencia4() {
-        int n = (int) (Math.random() * 4 + 1);
+        int n = (int) (Math.random() * 4 + 1)+1;
         int p = (int) (Math.random() * 9 + 1);
 
         arreglo[0] = p;
@@ -184,11 +184,11 @@ public class SecuenciaActivity  extends AppCompatActivity {
     }
     //Agregar numero aleatorio mediante busqueda binaria
     void agregarExtra() {
-        int aleatorio = (int) (Math.random() * (arreglo[arreglo.length - 2]-arreglo[0]+1) + arreglo[0]);
+        int aleatorio = (int) (Math.random() * (arreglo[arreglo.length - 2]*2+5-arreglo[0]+1) + arreglo[0]);
         respuesta=aleatorio;
         // int posicion = (int)(Math.random()*(arreglo.length));
         int izquierda = 0;
-        int derecha = arreglo.length - 1;
+        int derecha = arreglo.length - 2;
         int guardaPosicion = 0;
         boolean valorExistente = false;
         while (izquierda <= derecha && !valorExistente) {
