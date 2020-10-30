@@ -45,6 +45,9 @@ public class juegoGrafico2 extends AppCompatActivity {
                     Toast mensaje1 =
                             Toast.makeText(getApplicationContext(),"¡CORRECTO!... lo aplasta",Toast.LENGTH_LONG);
                     mensaje1.show();
+
+                    Intent intent = new Intent(v.getContext(), juegoGrafico3.class);
+                    startActivityForResult(intent, 0);
                 }
             });
 
@@ -54,6 +57,9 @@ public class juegoGrafico2 extends AppCompatActivity {
                     Toast mensaje1 =
                             Toast.makeText(getApplicationContext(),"incorrecto :(... lo aplasta",Toast.LENGTH_LONG);
                     mensaje1.show();
+
+                    Intent intent = new Intent(v.getContext(), juegoGrafico3.class);
+                    startActivityForResult(intent, 0);
                 }
             });
 
@@ -66,6 +72,9 @@ public class juegoGrafico2 extends AppCompatActivity {
                     Toast mensaje1 =
                             Toast.makeText(getApplicationContext(),"incorrecto :(... sobrevive",Toast.LENGTH_LONG);
                     mensaje1.show();
+
+                    Intent intent = new Intent(v.getContext(), juegoGrafico3.class);
+                    startActivityForResult(intent, 0);
                 }
             });
 
@@ -75,6 +84,9 @@ public class juegoGrafico2 extends AppCompatActivity {
                     Toast mensaje1 =
                             Toast.makeText(getApplicationContext(),"¡CORRECTO!... sobrevive",Toast.LENGTH_LONG);
                     mensaje1.show();
+
+                    Intent intent = new Intent(v.getContext(), juegoGrafico3.class);
+                    startActivityForResult(intent, 0);
                 }
             });
 

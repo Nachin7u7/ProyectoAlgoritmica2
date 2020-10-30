@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".juegoGrafico3">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Anita y Juan estaban viendo las constelaciones y de repente notaron que se
+lograba ver la constelación de Orión y como Juan le invitó una sustancia alucinogena a Anita
+ella empezó a preguntar cuestiones sin sentido y le preguntó a Juan que talla de cintura será Orión si su
+sinturon se complementa por 3 estrellas... ¿Podrías ayudar a Juan a decirle a anita la distnacia entre el primer
+punto y el último para saber que tan grande es el estómago de Orión? "
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/punto1"
+            android:layout_marginTop="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="punto1"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="200dp"
+            android:src="@drawable/cinturon_de_orion" />
+        <TextView
+            android:id="@+id/punto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="punto2"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ay Anita por eso no tienes amigos jajaja"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cuál es la respuesta?"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="130dp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/respuesta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="respuesta1"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/respuesta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="respuesta1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
