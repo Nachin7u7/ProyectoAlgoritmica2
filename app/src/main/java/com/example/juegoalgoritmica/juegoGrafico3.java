@@ -38,9 +38,14 @@ public class juegoGrafico3 extends AppCompatActivity {
         int ans = (int) (Math.random()*(2));
 
         if(ans == 1){
-            respuesta1.setText(distanciaEstrellas(punto1X,punto1Y,punto2X,punto2Y)+" años luz");
-            respuesta2.setText((Math.random()*(12-0)+1)+" años luz");
-
+            int correctAns = distanciaEstrellas(punto1X,punto1Y,punto2X,punto2Y);
+            respuesta1.setText(correctAns+" años luz");
+            int wrongAns =(int)(Math.random()*(12-0));
+            respuesta2.setText(wrongAns + " años luz");
+            if(correctAns == wrongAns){
+                wrongAns++;
+                respuesta2.setText(wrongAns + " años luz");
+            }
             respuesta1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
