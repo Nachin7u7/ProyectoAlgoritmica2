@@ -52,6 +52,10 @@ public class juegoGrafico3 extends AppCompatActivity {
                     Toast mensaje1 =
                             Toast.makeText(getApplicationContext(),"¡CORRECTO!",Toast.LENGTH_LONG);
                     mensaje1.show();
+
+                    Intent intent = new Intent(v.getContext(), juegoGrafico4.class);
+                    startActivityForResult(intent, 0);
+
                 }
             });
             respuesta2.setOnClickListener(new View.OnClickListener() {
@@ -60,20 +64,28 @@ public class juegoGrafico3 extends AppCompatActivity {
                     Toast mensaje1 =
                             Toast.makeText(getApplicationContext(),"incorrecto... :(",Toast.LENGTH_LONG);
                     mensaje1.show();
+
+                    Intent intent = new Intent(v.getContext(), juegoGrafico4.class);
+                    startActivityForResult(intent, 0);
+
                 }
             });
 
         }else{
-
-            respuesta2.setText(distanciaEstrellas(punto1X,punto1Y,punto2X,punto2Y)+" años luz");
-            respuesta1.setText((Math.random()*(12-0)+1)+" años luz");
-
+            int correctAns = distanciaEstrellas(punto1X,punto1Y,punto2X,punto2Y);
+            respuesta2.setText(correctAns+" AÑOS LUZ");
+            int wrongAns = (int)(Math.random()*(12-0)+1);
+            respuesta1.setText(wrongAns+" AÑOS LUZ");
             respuesta2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Toast mensaje1 =
                             Toast.makeText(getApplicationContext(),"¡CORRECTO!",Toast.LENGTH_LONG);
                     mensaje1.show();
+
+                    Intent intent = new Intent(v.getContext(), juegoGrafico4.class);
+                    startActivityForResult(intent, 0);
+
                 }
             });
             respuesta1.setOnClickListener(new View.OnClickListener() {
@@ -82,6 +94,10 @@ public class juegoGrafico3 extends AppCompatActivity {
                     Toast mensaje1 =
                             Toast.makeText(getApplicationContext(),"incorrecto... :(",Toast.LENGTH_LONG);
                     mensaje1.show();
+
+                    Intent intent = new Intent(v.getContext(), juegoGrafico4.class);
+                    startActivityForResult(intent, 0);
+
                 }
             });
 
