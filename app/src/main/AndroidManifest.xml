@@ -22,6 +22,9 @@
         <activity
             android:name=".LaberintoActivity"
             android:label="Laberinto"/>
+        <activity
+            android:name=".PalabrasActivity"
+            android:label="Palabras"/>
     </application>
 
 </manifest>

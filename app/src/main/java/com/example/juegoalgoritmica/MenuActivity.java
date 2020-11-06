@@ -14,6 +14,8 @@ public class MenuActivity extends AppCompatActivity {
     private Button botonJuego1;
     private Button botonJuego2;
     private Button botonJuego3;
+    private Button botonJuego4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,7 @@ public class MenuActivity extends AppCompatActivity {
         botonJuego1 = findViewById(R.id.juego1);
         botonJuego2 = findViewById(R.id.juego2);
         botonJuego3 = findViewById(R.id.juego3);
+        botonJuego4 = findViewById(R.id.juego4);
 
     }
 
@@ -49,6 +52,13 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent laberintoIntent = new Intent(MenuActivity.this, LaberintoActivity.class);
                 startActivity(laberintoIntent);
+            }
+        });
+        botonJuego4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent palabrasIntent = new Intent(MenuActivity.this, PalabrasActivity.class);
+                startActivity(palabrasIntent);
             }
         });
     }
