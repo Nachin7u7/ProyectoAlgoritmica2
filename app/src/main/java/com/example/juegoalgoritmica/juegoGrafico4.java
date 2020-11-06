@@ -94,8 +94,8 @@ public class juegoGrafico4 extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(),"¡CORRECTO!",Toast.LENGTH_LONG);
                     mensaje1.show();
 
-                    //Intent intent = new Intent(v.getContext(), juegoGrafico(nivel).class);
-                    //startActivityForResult(intent, 0);
+                    Intent intent = new Intent(v.getContext(), juegoGrafico5.class);
+                    startActivityForResult(intent, 0);
 
                 }
             });
@@ -107,8 +107,8 @@ public class juegoGrafico4 extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(),"incorrecto :(....",Toast.LENGTH_LONG);
                     mensaje1.show();
 
-                    //Intent intent = new Intent(v.getContext(), juegoGrafico(nivel).class);
-                    //startActivityForResult(intent, 0);
+                    Intent intent = new Intent(v.getContext(), juegoGrafico5.class);
+                    startActivityForResult(intent, 0);
 
                 }
             });
@@ -122,8 +122,8 @@ public class juegoGrafico4 extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(),"¡CORRECTO!",Toast.LENGTH_LONG);
                     mensaje1.show();
 
-                    //Intent intent = new Intent(v.getContext(), juegoGrafico(nivel).class);
-                    //startActivityForResult(intent, 0);
+                    Intent intent = new Intent(v.getContext(), juegoGrafico5.class);
+                    startActivityForResult(intent, 0);
 
                 }
             });
@@ -135,8 +135,8 @@ public class juegoGrafico4 extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(),"incorrecto :(....",Toast.LENGTH_LONG);
                     mensaje1.show();
 
-                    //Intent intent = new Intent(v.getContext(), juegoGrafico(nivel).class);
-                    //startActivityForResult(intent, 0);
+                    Intent intent = new Intent(v.getContext(), juegoGrafico5.class);
+                    startActivityForResult(intent, 0);
 
                 }
             });
