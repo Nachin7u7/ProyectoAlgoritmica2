@@ -19,6 +19,9 @@
         <activity
             android:name=".SecuenciaActivity"
             android:label="Secuencia" />
+        <activity
+            android:name=".LaberintoActivity"
+            android:label="Laberinto"/>
     </application>
 
 </manifest>
