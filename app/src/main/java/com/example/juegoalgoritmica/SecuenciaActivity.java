@@ -146,6 +146,7 @@ public class SecuenciaActivity  extends AppCompatActivity {
             arreglo[i] = p + n;
             p = p + n;
         }
+
     }
 
     void secuencia3() {
@@ -158,6 +159,7 @@ public class SecuenciaActivity  extends AppCompatActivity {
             p = p + n;
             n++;
         }
+
     }
 
     void secuencia4() {
@@ -170,6 +172,7 @@ public class SecuenciaActivity  extends AppCompatActivity {
             p = p * n;
 
         }
+
     }
 
     void secuencia5() {
@@ -181,6 +184,7 @@ public class SecuenciaActivity  extends AppCompatActivity {
             arreglo[i] = p * p-1;
             p++;
         }
+
     }
     //Agregar numero aleatorio mediante busqueda binaria
     void agregarExtra() {

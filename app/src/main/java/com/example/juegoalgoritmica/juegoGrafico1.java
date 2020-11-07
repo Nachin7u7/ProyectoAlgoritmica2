@@ -18,8 +18,8 @@ public class juegoGrafico1 extends AppCompatActivity {
     int puntosRy[] = new int[3];
 
     double areaDelTriangulo(int ax,int ay, int bx,int by,int cx,int cy){
-        double s= Math.sqrt((bx-ax)*(bx-ax) + (by-ay)*(by-ay)) + Math.sqrt((cx-ax)*(cx-ax) + (cy-ay)*(cy-ay))
-                + Math.sqrt((cx-bx)*(cx-bx) + (cy-by)*(cy-by));
+        double s= (Math.sqrt((bx-ax)*(bx-ax) + (by-ay)*(by-ay)) + Math.sqrt((cx-ax)*(cx-ax) + (cy-ay)*(cy-ay))
+                + Math.sqrt((cx-bx)*(cx-bx) + (cy-by)*(cy-by)))/2;
         return  Math.sqrt(s*(s-(Math.sqrt((bx-ax)*(bx-ax) + (by-ay)*(by-ay))))*(s-(Math.sqrt((cx-ax)*(cx-ax)
                 + (cy-ay)*(cy-ay))))*(s-(Math.sqrt((cx-bx)*(cx-bx) + (cy-by)*(cy-by)))));
     }
