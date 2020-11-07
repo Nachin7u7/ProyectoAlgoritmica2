@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:layout_height="match_parent"
+    tools:context=".juegoGrafico5">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_marginTop="40dp"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:text="¡OH NO! Te expulsaron de la nave por ser el impostor, tienes que arrivar en un planeta... ¿Que planeta es mas grande? Asi sabremos cual esta mas cerca"/>
+
+    <TextView
+        android:id="@+id/pt5s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pt5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pt1s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-60dp"
+            android:text="pt1"/>
+        <TextView
+            android:id="@+id/pt2s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="pt2"/>
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="155dp"
+            android:layout_height="154dp"
+            android:src="@drawable/saturno" />
+
+        <TextView
+            android:id="@+id/pt3s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="pt3"/>
+        <TextView
+            android:id="@+id/pt4s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-60dp"
+            android:text="pt4"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pt5j"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pt5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pt1j"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-60dp"
+            android:text="pt1"/>
+        <TextView
+            android:id="@+id/pt2j"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="pt2"/>
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="155dp"
+            android:layout_height="154dp"
+            android:src="@drawable/jupiter" />
+
+        <TextView
+            android:id="@+id/pt3j"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="pt3"/>
+        <TextView
+            android:id="@+id/pt4j"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-60dp"
+            android:text="pt4"/>
+
+    </LinearLayout>
+
+</LinearLayout>

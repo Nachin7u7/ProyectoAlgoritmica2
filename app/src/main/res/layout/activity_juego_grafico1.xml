@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".juegoGrafico1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Que triangulo es mas grande?"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/puntoAzul1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="punto1"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/puntoAzul2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="punto2"
+            android:layout_gravity="bottom"
+            android:textColor="@color/black" />
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="217dp"
+            android:layout_height="171dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/triangulo_azul" />
+        <TextView
+            android:id="@+id/puntoAzul3"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="punto3"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/puntoRojo1"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="punto1"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/puntoRojo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="punto2"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="60dp"
+        app:layout_constraintVertical_bias="0.072"
+        tools:layout_editor_absoluteX="53dp" />
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="217dp"
+        android:layout_height="171dp"
+        android:scaleType="center"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/puntoRojo3"
+        app:layout_constraintStart_toEndOf="@+id/puntoRojo2"
+        app:srcCompat="@drawable/triangulo_rojo" />
+
+
+    <TextView
+        android:id="@+id/puntoRojo3"
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="punto3"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.072"
+        tools:layout_editor_absoluteX="302dp" />
+</LinearLayout>
+
+</LinearLayout>
