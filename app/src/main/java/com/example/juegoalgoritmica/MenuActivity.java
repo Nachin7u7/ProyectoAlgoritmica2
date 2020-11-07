@@ -16,6 +16,7 @@ public class MenuActivity extends AppCompatActivity {
     private Button botonJuego3;
     private Button botonJuego4;
     private Button botonJuego5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,7 @@ public class MenuActivity extends AppCompatActivity {
         botonJuego3 = findViewById(R.id.juego3);
         botonJuego4 = findViewById(R.id.juego4);
         botonJuego5 = findViewById(R.id.juego5);
+
     }
 
     private void addEvents(){
@@ -50,7 +52,6 @@ public class MenuActivity extends AppCompatActivity {
         botonJuego3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent laberintoIntent = new Intent(MenuActivity.this, LaberintoActivity.class);
                 startActivity(laberintoIntent);
             }

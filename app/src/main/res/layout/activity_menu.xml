@@ -44,7 +44,7 @@
                 android:background="#FF5722"
                 android:text="Juego 1: Secuencias"
                 android:textColor="#212121"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 app:backgroundTint="#FF5722"/>
             <Button
                 android:id="@+id/juego2"
@@ -59,7 +59,7 @@
                 android:background="#FF5722"
                 android:text="Juego 2: Formas"
                 android:textColor="#212121"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 app:backgroundTint="#FF5722"/>
             <Button
                 android:id="@+id/juego3"
@@ -74,7 +74,7 @@
                 android:background="#FF5722"
                 android:text="Juego 3: Laberinto"
                 android:textColor="#212121"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 app:backgroundTint="#FF5722"/>
             <Button
                 android:id="@+id/juego4"
@@ -89,7 +89,7 @@
                 android:background="#FF5722"
                 android:text="Juego 4: Palabras"
                 android:textColor="#212121"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 app:backgroundTint="#FF5722"/>
 
             <Button
@@ -105,10 +105,8 @@
                 android:background="#FF5722"
                 android:text="Juego 5: Grafos"
                 android:textColor="#212121"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 app:backgroundTint="#FF5722"/>
-
-
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
