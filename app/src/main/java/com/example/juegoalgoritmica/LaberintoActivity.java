@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,12 +25,16 @@ public class LaberintoActivity extends AppCompatActivity {
         Log.e(LOG, "onCreate");
         initViews();
         addEvents();
+
     }
     private void initViews(){
+        ImageView imagen = findViewById(R.id.laberintoImagen);
         siSePuede = findViewById(R.id.laberintoSi1);
         noSePuede = findViewById(R.id.laberintoNo1);
         iniciarLaberinto();
         sePuedeResolver=resolverLaberinto(0,9);
+        if(sePuedeResolver) imagen.setImageResource(R.drawable.laberinto1);
+        else    imagen.setImageResource(R.drawable.laberinto2);
     }
     private void addEvents(){
         siSePuede.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +59,8 @@ public class LaberintoActivity extends AppCompatActivity {
         });
     }
     private void iniciarLaberinto(){
+        int aux = (int)(Math.random()*(2));
+        boolean auxiliar = aux  == 1;
         boolean[] fila1= {true,true,true,true,true,true,false,true,true,true,true,true,true,true,true};
         boolean[] fila2= {true,false,false,false,false,false,false,true,false,false,false,false,true,false,true};
         boolean[] fila3= {true,false,true,true,true,true,false,true,true,true,true,false,true,false,true};
@@ -62,7 +69,7 @@ public class LaberintoActivity extends AppCompatActivity {
         boolean[] fila6= {true,false,false,false,false,false,false,false,false,false,true,false,true,false,true};
         boolean[] fila7= {true,true,true,true,true,true,true,true,true,false,true,false,true,false,true};
         boolean[] fila8= {false,true,false,false,true,false,false,false,false,false,true,true,true,false,true};
-        boolean[] fila9= {false,false,false,false,true,false,true,true,true,true,true,true,true,false,true};
+        boolean[] fila9= {false,false,false,false,true,false,true,true,  auxiliar ,true,true,true,true,false,true}; //aqui jaja
         boolean[] fila10= {true,true,true,false,true,false,true,false,false,false,false,false,true,false,true};
         boolean[] fila11= {false,false,true,false,true,false,true,false,true,true,true,false,true,false,true};
         boolean[] fila12= {true,true,true,false,true,false,true,false,true,false,false,false,true,false,true};
