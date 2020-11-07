@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#212121"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="¿Cuantas de las siguientes palabras empiezan con 'pr'"
+        android:textSize="35sp"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/palabrasImagen"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/palabras"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/numeroPalabarasUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:textColor="#212121"
+        android:textSize="30sp"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:layout_below="@id/palabrasImagen"/>
+    <ImageView
+        android:id="@+id/palabrascheck"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/check"
+        android:layout_below="@id/numeroPalabarasUsuario"/>
+
+
+</RelativeLayout>
