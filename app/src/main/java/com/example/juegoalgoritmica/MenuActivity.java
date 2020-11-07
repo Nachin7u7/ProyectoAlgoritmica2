@@ -13,6 +13,7 @@ public class MenuActivity extends AppCompatActivity {
     public static String LOG = MenuActivity.class.getName();
     private Button botonJuego1;
     private Button botonJuego2;
+    private Button botonJuego3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,7 @@ public class MenuActivity extends AppCompatActivity {
     private void initViews(){
         botonJuego1 = findViewById(R.id.juego1);
         botonJuego2 = findViewById(R.id.juego2);
+        botonJuego3 = findViewById(R.id.juego3);
     }
 
     private void addEvents(){
@@ -39,6 +41,13 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //Intent registerIntent = new Intent(InicioActivity.this, RegisterActivity.class);
                 //startActivity(registerIntent);
+            }
+        });
+        botonJuego3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent secuenciaIntent = new Intent(MenuActivity.this, GrafosGamesActivity.class);
+                startActivity(secuenciaIntent);
             }
         });
     }
