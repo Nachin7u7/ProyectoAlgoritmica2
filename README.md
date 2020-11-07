@@ -1,8 +1,12 @@
 # ProyectoAlgoritmica2
 
-integrantes:
+Integrantes:
+
 -Ignacio Valencia
+
 -Andre Machicao
+
+-Kevin Pomier
 
 ## Descripción:
 Aplicación desarrollada en Android Studio para ejemplificar el funcionamiento de diversos algoritmos mediante el uso de minijuegos interactivos.
