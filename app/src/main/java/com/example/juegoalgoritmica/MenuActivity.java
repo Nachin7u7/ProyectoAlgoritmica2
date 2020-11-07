@@ -14,8 +14,11 @@ public class MenuActivity extends AppCompatActivity {
     private Button botonJuego1;
     private Button botonJuego2;
     private Button botonJuego3;
+<<<<<<< HEAD
+=======
     private Button botonJuego4;
 
+>>>>>>> b68ad426ff3c061e4d43dd96a46ab3c145e6f09d
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,8 +31,11 @@ public class MenuActivity extends AppCompatActivity {
         botonJuego1 = findViewById(R.id.juego1);
         botonJuego2 = findViewById(R.id.juego2);
         botonJuego3 = findViewById(R.id.juego3);
+<<<<<<< HEAD
+=======
         botonJuego4 = findViewById(R.id.juego4);
 
+>>>>>>> b68ad426ff3c061e4d43dd96a46ab3c145e6f09d
     }
 
     private void addEvents(){
@@ -50,6 +56,10 @@ public class MenuActivity extends AppCompatActivity {
         botonJuego3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
+                Intent secuenciaIntent = new Intent(MenuActivity.this, GrafosGamesActivity.class);
+                startActivity(secuenciaIntent);
+=======
                 Intent laberintoIntent = new Intent(MenuActivity.this, LaberintoActivity.class);
                 startActivity(laberintoIntent);
             }
@@ -59,6 +69,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent palabrasIntent = new Intent(MenuActivity.this, PalabrasActivity.class);
                 startActivity(palabrasIntent);
+>>>>>>> b68ad426ff3c061e4d43dd96a46ab3c145e6f09d
             }
         });
     }
