@@ -93,7 +93,7 @@
                 app:backgroundTint="#FF5722"/>
 
             <Button
-                android:id="@+id/juego3"
+                android:id="@+id/juego5"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_gravity="center"
@@ -103,7 +103,7 @@
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
                 android:background="#FF5722"
-                android:text="Juego 3: Grafos"
+                android:text="Juego 5: Grafos"
                 android:textColor="#212121"
                 android:textSize="25sp"
                 app:backgroundTint="#FF5722"/>
